@@ -1,8 +1,8 @@
-<map version="docear 1.0" dcr_id="1454996405559_cez9mdmj16auq5exzb68j09wa" project="152C04A2E42AJGYI9BMGODC1Z3EK271D2ZVV" project_last_home="file:/E:/HeLei/Notes/">
+<map version="docear 1.0" project="152C04A2E42AJGYI9BMGODC1Z3EK271D2ZVV" project_last_home="file:/E:/HeLei/Notes/" dcr_id="1454996405559_cez9mdmj16auq5exzb68j09wa">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <node TEXT="NeuralNetworks" FOLDED="false" ID="ID_468254664" CREATED="1454925094879" MODIFIED="1454925094889">
-<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
-<hook NAME="MapStyle" zoom="1.948">
+<hook NAME="AutomaticEdgeColor" COUNTER="2"/>
+<hook NAME="MapStyle" zoom="1.61">
     <properties show_note_icons="true"/>
 
 <map_styles>
@@ -106,7 +106,7 @@
 </node>
 <node TEXT="&#x9a6c;&#x5c14;&#x53ef;&#x592b;&#x7f51;&#x7edc;" ID="ID_718470649" CREATED="1455182885998" MODIFIED="1455182898665"/>
 </node>
-<node TEXT="How to learn relationship by BP algorithm" POSITION="right" ID="ID_737447032" CREATED="1458649277700" MODIFIED="1458649384136">
+<node TEXT="How to learn relationship by BP algorithm" FOLDED="true" POSITION="right" ID="ID_737447032" CREATED="1458649277700" MODIFIED="1458649384136">
 <edge COLOR="#00ff00"/>
 <node TEXT="Simple example: relational information -&gt;feature vectors" FOLDED="true" ID="ID_1073072813" CREATED="1458649414994" MODIFIED="1458649478390">
 <node TEXT="Family tree" ID="ID_1782340105" CREATED="1458649496753" MODIFIED="1458649502205"/>
@@ -408,7 +408,7 @@
 <node TEXT="combined with adaptive learning rates(?)" ID="ID_1459088835" CREATED="1458725171774" MODIFIED="1458725194608"/>
 </node>
 </node>
-<node TEXT="summary of learning methods for neural networks" FOLDED="true" ID="ID_966148603" CREATED="1458725271110" MODIFIED="1458814767001" MOVED="1458814767001">
+<node TEXT="summary of learning methods for neural networks" ID="ID_966148603" CREATED="1458725271110" MODIFIED="1458814767001" MOVED="1458814767001">
 <node TEXT="for small datasets or bigger datasets without much redundancy, use a full-batch method" ID="ID_1000998791" CREATED="1458725303566" MODIFIED="1458725346479">
 <node TEXT="non-linear conjugate gradient" ID="ID_1912065250" CREATED="1458725382581" MODIFIED="1458725396112"/>
 <node TEXT="LBFGS" ID="ID_1477512888" CREATED="1458725396325" MODIFIED="1458725401566"/>
@@ -418,7 +418,7 @@
 <node TEXT="gradient descent with momentum" ID="ID_84029686" CREATED="1458725602411" MODIFIED="1458725616222"/>
 <node TEXT="rmsprop" ID="ID_617439996" CREATED="1458725616627" MODIFIED="1458725664157"/>
 </node>
-<node TEXT="why there is no simple recipe" FOLDED="true" ID="ID_1958929846" CREATED="1458725712690" MODIFIED="1458725723237">
+<node TEXT="why there is no simple recipe" ID="ID_1958929846" CREATED="1458725712690" MODIFIED="1458725723237">
 <node TEXT="neural nets differ a lot" ID="ID_170370051" CREATED="1458725753882" MODIFIED="1458725764621">
 <node TEXT="deep nets" ID="ID_866695056" CREATED="1458725775250" MODIFIED="1458725778428"/>
 <node TEXT="recurrent nets" ID="ID_937260665" CREATED="1458725778682" MODIFIED="1458725782412"/>
@@ -674,7 +674,7 @@
 <node TEXT="the ratio" ID="ID_1959240325" CREATED="1458805623328" MODIFIED="1458805627600"/>
 </node>
 </node>
-<node TEXT="MacKay&apos;s quick and dirty method of fixing weight costs" ID="ID_1120828868" CREATED="1458805700798" MODIFIED="1458805727855">
+<node TEXT="MacKay&apos;s quick and dirty method of fixing weight costs" FOLDED="true" ID="ID_1120828868" CREATED="1458805700798" MODIFIED="1458805727855">
 <node TEXT="estimating the variance of the output noise" ID="ID_1528455533" CREATED="1458805889061" MODIFIED="1458805904430">
 <node TEXT="variance of the residual errors" ID="ID_585667811" CREATED="1458807915150" MODIFIED="1458807933105"/>
 </node>
@@ -689,7 +689,60 @@
 </node>
 </node>
 </node>
-<node TEXT="the idea of full Bayesian learning" ID="ID_1732176651" CREATED="1458813086361" MODIFIED="1458813708817"/>
+<node TEXT="the idea of full Bayesian learning" FOLDED="true" ID="ID_1732176651" CREATED="1458813086361" MODIFIED="1458813708817">
+<node TEXT="parameters" ID="ID_921071645" CREATED="1459828508735" MODIFIED="1459828635281" MOVED="1459828521542">
+<node TEXT="the best single setting of the parameters" ID="ID_1965262469" CREATED="1459828419872" MODIFIED="1459828544221" MOVED="1459828526269">
+<icon BUILTIN="button_cancel"/>
+</node>
+<node TEXT="the full posterior distribution over all possible parameter settings" ID="ID_1991463522" CREATED="1459828463848" MODIFIED="1459828547108" MOVED="1459828528348">
+<icon BUILTIN="button_ok"/>
+</node>
+<node TEXT="extremely computationally intensive" ID="ID_899951534" CREATED="1459828665902" MODIFIED="1459833005035"/>
+</node>
+<node TEXT="predictions" ID="ID_1863417648" CREATED="1459828636207" MODIFIED="1459828694896">
+<node TEXT="each different setting of the parameters make its own prediction" ID="ID_58156306" CREATED="1459828711126" MODIFIED="1459828743344"/>
+<node TEXT="combine all the predictions by weighting them by the posterior probability" ID="ID_891999890" CREATED="1459828747125" MODIFIED="1459832926306"/>
+<node TEXT="extremely conputationally intensive" ID="ID_1097734569" CREATED="1459832989400" MODIFIED="1459833030290"/>
+</node>
+<node TEXT="ability" ID="ID_963580885" CREATED="1459833065471" MODIFIED="1459833068137">
+<node TEXT="use complicated models when we do not have much data" ID="ID_853737727" CREATED="1459833069455" MODIFIED="1459833101822">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="overfitting disappears" ID="ID_130283658" CREATED="1459833157406" MODIFIED="1459833874942">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="not evolve any gradient descent and no local optimum issues" ID="ID_438617010" CREATED="1459833880994" MODIFIED="1459834013898">
+<icon BUILTIN="yes"/>
+</node>
+<node TEXT="the amount of data should not influence our prior beliefs about the complexity of the model" ID="ID_1335344320" CREATED="1459833403716" MODIFIED="1459833962527"/>
+</node>
+<node TEXT="model" ID="ID_1630508884" CREATED="1459834123096" MODIFIED="1459834126850">
+<node TEXT="mathematic model" ID="ID_1219979987" CREATED="1459834128168" MODIFIED="1459834242830">
+<hook EQUATION="p(t_{test}| input_{test}) = \sum_{g \in grid} p(W_g|D)p(t_{test}|input_{test}, W_g)" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="key" ID="ID_1228892609" CREATED="1459834303438" MODIFIED="1459834330877">
+<hook EQUATION="p(W_g|D)" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+</node>
+</node>
+<node TEXT="making full Bayesian learning practical" FOLDED="true" ID="ID_486643146" CREATED="1459828090381" MODIFIED="1459834428012">
+<node TEXT="problem: what can we do if we have thousands even millions of weights" ID="ID_1306232460" CREATED="1459834429190" MODIFIED="1459834623247">
+<icon BUILTIN="help"/>
+</node>
+<node TEXT="MC method: sample weight vectors in proportion to their probability in the posterior distribution" ID="ID_1842796747" CREATED="1459834513365" MODIFIED="1459834894315">
+<hook EQUATION="p(t_{test}| input_{test}, D) = \sum_i p(W_i|D)p(t_{test}|input_{test}, W_i)" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="the wonderful property of MCMC" ID="ID_84060645" CREATED="1459835057441" MODIFIED="1459835142883">
+<node TEXT="use just the right amount of noise" ID="ID_474642208" CREATED="1459835182032" MODIFIED="1459835208292"/>
+<node TEXT="wander around for long enough before we take a sample" ID="ID_1979692026" CREATED="1459835208744" MODIFIED="1459835237370"/>
+<node TEXT="will get an unbiased sample from the true posterior over weight vectors" ID="ID_1257411333" CREATED="1459835237703" MODIFIED="1459835284980">
+<icon BUILTIN="bookmark"/>
+</node>
+</node>
+<node TEXT="mini-batch" ID="ID_86360427" CREATED="1459835353943" MODIFIED="1459835358617">
+<node TEXT="a random mini-batch = sampling noise = noise" ID="ID_232724299" CREATED="1459835384839" MODIFIED="1459835399393"/>
+</node>
+</node>
 </node>
 <node TEXT="combine models" FOLDED="true" POSITION="right" ID="ID_187772865" CREATED="1458811485509" MODIFIED="1458811491063">
 <edge COLOR="#007c00"/>
@@ -729,6 +782,208 @@
 </node>
 <node TEXT="any net that use &apos;early stopping&apos; can do better" ID="ID_744632228" CREATED="1458814330209" MODIFIED="1458814358730"/>
 </node>
+</node>
+<node TEXT="Hopfield Nets" POSITION="right" ID="ID_383318690" CREATED="1459836150913" MODIFIED="1459836175077">
+<edge COLOR="#7c7c00"/>
+<node TEXT="intro" FOLDED="true" ID="ID_1915639818" CREATED="1459836210393" MODIFIED="1459836212979">
+<node TEXT="one of the simplest kinds of energy-based model" ID="ID_1298833877" CREATED="1459836614182" MODIFIED="1459836651408"/>
+<node TEXT="composition" ID="ID_310521954" CREATED="1459836701390" MODIFIED="1459836707903">
+<node TEXT="binary threshold units" ID="ID_459534618" CREATED="1459836723085" MODIFIED="1459836750488"/>
+<node TEXT="recurrent connections" ID="ID_1461079159" CREATED="1459836757837" MODIFIED="1459836765848">
+<node TEXT="symmetric = global energy function" ID="ID_1148252885" CREATED="1459836861076" MODIFIED="1459836888583"/>
+<node TEXT="each state has an energy" ID="ID_1434771877" CREATED="1459836899204" MODIFIED="1459836921142"/>
+</node>
+<node TEXT="non-linear units" ID="ID_650439018" CREATED="1459836774901" MODIFIED="1459836784559">
+<node TEXT="settle to a stable state" ID="ID_1688530699" CREATED="1459836798916" MODIFIED="1459836809320"/>
+<node TEXT="oscillate" ID="ID_1891275442" CREATED="1459836809773" MODIFIED="1459836822375"/>
+<node TEXT="chaotic" ID="ID_1917555592" CREATED="1459836822869" MODIFIED="1459836830750"/>
+</node>
+</node>
+<node TEXT="energy function" ID="ID_1885201685" CREATED="1459837014627" MODIFIED="1459837019525">
+<node TEXT="contribution: one connection weight and the binary states of two neurons" ID="ID_1416173422" CREATED="1459837049419" MODIFIED="1459837086957"/>
+<node TEXT="quadratic energy function" ID="ID_1439001320" CREATED="1459837088747" MODIFIED="1459837230828">
+<hook EQUATION="E = -\sum_i s_i b_i - \sum_{i&lt;j}s_i s_j w_{ij}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="energy gap: how the state of one units affects the global energy" ID="ID_1964499920" CREATED="1459837232090" MODIFIED="1459837340861">
+<hook EQUATION="\Delta E_i = E(s_i=0)-E(s_i=1) = b_i + \sum_j s_j w_{ij}" NAME="plugins/latex/LatexNodeHook.properties"/>
+<node TEXT="decision rule:want minimum E, if gap &gt; 0, choose 1, otherwise" ID="ID_1130191569" CREATED="1459837774126" MODIFIED="1459837913839"/>
+</node>
+<node TEXT="find an energy minimum" ID="ID_1114592583" CREATED="1459837926765" MODIFIED="1459837938929">
+<node TEXT="update one unit at a time in random order" ID="ID_1089994295" CREATED="1459837939709" MODIFIED="1459837973111"/>
+<node TEXT="use binary decision rule" ID="ID_170395037" CREATED="1459837980844" MODIFIED="1459837989272"/>
+<node TEXT="not the deepest minimum" ID="ID_1932948420" CREATED="1459838008332" MODIFIED="1459838020814"/>
+</node>
+</node>
+<node TEXT="why do the decisions need to be sequential" ID="ID_1032753544" CREATED="1459838124731" MODIFIED="1459838139390" MOVED="1459838530231">
+<node TEXT="if simultaneous, the energy could go up" ID="ID_1992862922" CREATED="1459838140459" MODIFIED="1459838174621"/>
+<node TEXT="if simultaneous, we can get oscillations" ID="ID_1034401252" CREATED="1459838175211" MODIFIED="1459838391324"/>
+<node TEXT="update with random timing" ID="ID_1778406952" CREATED="1459838318650" MODIFIED="1459838326188">
+<node TEXT="parallel" ID="ID_1845136364" CREATED="1459838327202" MODIFIED="1459838336916"/>
+<node TEXT="wait for a random length" ID="ID_206124087" CREATED="1459838337249" MODIFIED="1459838357788"/>
+<node TEXT="oscillations are usually destroyed" ID="ID_564369022" CREATED="1459838364698" MODIFIED="1459838385700"/>
+</node>
+</node>
+<node TEXT="memories" ID="ID_258758024" CREATED="1459838531633" MODIFIED="1459838535059">
+<node TEXT="energy minima of a neural net" ID="ID_1558170634" CREATED="1459838562040" MODIFIED="1459838577554"/>
+<node TEXT="symemtry: partial memories into full memories" ID="ID_1964575024" CREATED="1459838619393" MODIFIED="1459838638523"/>
+<node TEXT="content-addressable memory" ID="ID_228387689" CREATED="1459838680791" MODIFIED="1459838692746"/>
+<node TEXT="how to store memory" FOLDED="true" ID="ID_1105134499" CREATED="1459838863431" MODIFIED="1459838873736">
+<node TEXT="incrementing the weight between any two units by the product of their activities" ID="ID_361946511" CREATED="1459838887550" MODIFIED="1459838956963">
+<hook EQUATION="\Delta w_{ij} = s_i s_j \\&#xa;\Delta w_{ij} = 4 (s_i - 1/2)(s_j-1/2)" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="not error driven" ID="ID_1712724021" CREATED="1459838978853" MODIFIED="1459838982751">
+<node TEXT="strength: online" ID="ID_1896059537" CREATED="1459838983677" MODIFIED="1459839020833"/>
+<node TEXT="weakness: not an efficient way to store things" ID="ID_590753129" CREATED="1459838991197" MODIFIED="1459839040663"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="dealing with spurious minima" ID="ID_1146100903" CREATED="1459836213209" MODIFIED="1459836234859">
+<node TEXT="the storage capacity" ID="ID_822400542" CREATED="1459840123782" MODIFIED="1459840129311">
+<node TEXT="only about 0.15N memories, means 0.15N^2 bits information" ID="ID_1463000938" CREATED="1459840138037" MODIFIED="1459840184227"/>
+</node>
+<node TEXT="spurious limit capacity" ID="ID_217804353" CREATED="1459840289492" MODIFIED="1459840301270"/>
+<node TEXT="avoid spurious minimum by unlearning" ID="ID_355100194" CREATED="1459840327244" MODIFIED="1459840339453">
+<node TEXT="opposite of the storage rule" ID="ID_765730497" CREATED="1459840418844" MODIFIED="1459840458629"/>
+<node TEXT="dream" ID="ID_1806406531" CREATED="1459840576787" MODIFIED="1459840585303">
+<icon BUILTIN="help"/>
+</node>
+<node TEXT="how much unlearning" ID="ID_489540645" CREATED="1459840640242" MODIFIED="1459840647884"/>
+</node>
+<node TEXT="increasing the capacity" ID="ID_1715659438" CREATED="1459840755905" MODIFIED="1459840765002">
+<node TEXT="cycle through the training set many times" ID="ID_117840650" CREATED="1459840765456" MODIFIED="1459840791803"/>
+<node TEXT="use perceptron convergence procedure" ID="ID_156508635" CREATED="1459840809425" MODIFIED="1459840829074"/>
+<node TEXT="in statistics called: &quot;pseudo-likelihood&quot;" ID="ID_729288713" CREATED="1459997695939" MODIFIED="1459997762604"/>
+<node TEXT="difference: symmetric weights" ID="ID_434470069" CREATED="1459997809945" MODIFIED="1459997837995">
+<node TEXT="two gradient" ID="ID_656250682" CREATED="1459997868337" MODIFIED="1459997873844"/>
+<node TEXT="average" ID="ID_1916094544" CREATED="1459997874129" MODIFIED="1459997876210"/>
+</node>
+</node>
+</node>
+<node TEXT="Hopfield nets with hidden units" ID="ID_1272730820" CREATED="1459836235089" MODIFIED="1459836264451">
+<node TEXT="instead of storing memeries, using it to get a good interpretation" ID="ID_1215398147" CREATED="1460001076394" MODIFIED="1460001102893" MOVED="1460001107550"/>
+<node TEXT="use the state of these hidden units as interpretations of the input data" ID="ID_124831360" CREATED="1460000893115" MODIFIED="1460000980632"/>
+<node TEXT="weights means constraints on interpretations" ID="ID_1936161244" CREATED="1460000932755" MODIFIED="1460001020901"/>
+<node TEXT="good interpretations means low energy states" ID="ID_342743350" CREATED="1460001021290" MODIFIED="1460001044453"/>
+<node TEXT="issues" ID="ID_494840488" CREATED="1460001143401" MODIFIED="1460001146436">
+<node TEXT="search" ID="ID_1147751408" CREATED="1460001147217" MODIFIED="1460001149244"/>
+<node TEXT="learning" ID="ID_1573041044" CREATED="1460001149450" MODIFIED="1460001154636"/>
+</node>
+</node>
+<node TEXT="using stochastic units to improve search" ID="ID_541830980" CREATED="1459836269528" MODIFIED="1459836317083">
+<node TEXT="find better energy minima" FOLDED="true" ID="ID_356273322" CREATED="1460346055488" MODIFIED="1460346071122">
+<node TEXT="use random noise to escape from poor minima" ID="ID_353079767" CREATED="1460345958571" MODIFIED="1460345982261" MOVED="1460346078770"/>
+<node TEXT="start with a lot of noise to cross energy barriers" ID="ID_1166046018" CREATED="1460346086567" MODIFIED="1460346157204"/>
+<node TEXT="slowly reduce the noise" ID="ID_601812332" CREATED="1460346168967" MODIFIED="1460346201330">
+<node TEXT="simulated annealing" ID="ID_1052900992" CREATED="1460346212247" MODIFIED="1460346227161"/>
+</node>
+</node>
+<node TEXT="how temperature affects transition probabilities" FOLDED="true" ID="ID_1151681485" CREATED="1460345985345" MODIFIED="1460346305865">
+<node TEXT="high temperature" ID="ID_610753761" CREATED="1460346596901" MODIFIED="1460346601600">
+<node TEXT="the probability of going downhill is higher than uphill" ID="ID_1822156927" CREATED="1460346656180" MODIFIED="1460346695479"/>
+<node TEXT="flatten the energy landscape" ID="ID_939376268" CREATED="1460346717387" MODIFIED="1460346727831"/>
+<node TEXT="hard to stay in deep minimum" ID="ID_115600508" CREATED="1460346762787" MODIFIED="1460346771428"/>
+</node>
+<node TEXT="low temperature" ID="ID_248309266" CREATED="1460346601924" MODIFIED="1460346606767">
+<node TEXT="probability of crossing barriers is lower" ID="ID_409868391" CREATED="1460346856546" MODIFIED="1460346899886"/>
+<node TEXT="the ratio gets much better" ID="ID_680971795" CREATED="1460346823722" MODIFIED="1460346856181" MOVED="1460346908210"/>
+<node TEXT="will take a very long time to get to a steady state" ID="ID_1327864068" CREATED="1460346978881" MODIFIED="1460346999237"/>
+</node>
+</node>
+<node TEXT="stochastic binary units" FOLDED="true" ID="ID_1409182389" CREATED="1460347029785" MODIFIED="1460347045523">
+<node TEXT="math expression" ID="ID_1753101092" CREATED="1460363717620" MODIFIED="1460363763756">
+<hook EQUATION="p(s_i)= \frac{1}{1+ e^{-\Delta E_i/T}}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="energy gap" ID="ID_1398544104" CREATED="1460363789323" MODIFIED="1460363857068">
+<hook EQUATION="\Delta E = E(s_i=0)-E(s_i=1) = b_i + \sum_j s_j w_{ij}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="explaination" ID="ID_952189779" CREATED="1460363889042" MODIFIED="1460363893267">
+<node TEXT="the &quot;temperature&quot; controls the amount of noise" ID="ID_1471170036" CREATED="1460363893946" MODIFIED="1460363936828"/>
+<node TEXT="raising the noise level is equavalent to decreasing all the energy gaps" ID="ID_456032612" CREATED="1460363937145" MODIFIED="1460363976124"/>
+<node TEXT="if the &quot;temperature&quot; is very high, the probability would be 0.5" ID="ID_786762177" CREATED="1460364021721" MODIFIED="1460364052069"/>
+<node TEXT="if the &quot;temperature&quot; is zero, the probability would be 1 or 0(depending on the sign of the energy gap)" ID="ID_1519057006" CREATED="1460364053825" MODIFIED="1460364293474"/>
+</node>
+<node TEXT="use binary stochastic units that have a temperature of 1" ID="ID_1866410854" CREATED="1460364390526" MODIFIED="1460364413649"/>
+</node>
+<node TEXT="thermal equilibrium at a temperature of 1" FOLDED="true" ID="ID_1323159905" CREATED="1460364441614" MODIFIED="1460364478912">
+<node TEXT="which settles down" ID="ID_94914200" CREATED="1460364525646" MODIFIED="1460364577408">
+<node TEXT="the lowest energy configuration" ID="ID_1790275207" CREATED="1460364530053" MODIFIED="1460364565362">
+<icon BUILTIN="button_cancel"/>
+</node>
+<node TEXT="the probability distribution, the stationary distribution" ID="ID_1112143377" CREATED="1460364548341" MODIFIED="1460364607664">
+<icon BUILTIN="button_ok"/>
+</node>
+<node TEXT="the probability of each configuration is proportational to each of the minus its energy" ID="ID_1024274618" CREATED="1460364630261" MODIFIED="1460364668582"/>
+</node>
+<node TEXT="how to approaching thermal equilibrium" ID="ID_763736017" CREATED="1460364819108" MODIFIED="1460364843094">
+<node TEXT="start with any distribution over all the identical system" ID="ID_803338544" CREATED="1460364843915" MODIFIED="1460364913581">
+<node TEXT="in the same configuration" ID="ID_1694754839" CREATED="1460364914802" MODIFIED="1460364936420"/>
+<node TEXT="an equal number of system in each configuration(uniform distribution)" ID="ID_1600741423" CREATED="1460364936746" MODIFIED="1460365045381"/>
+</node>
+<node TEXT="updating" ID="ID_1697359580" CREATED="1460365057681" MODIFIED="1460365062220">
+<node TEXT="pick a unit" ID="ID_1014078958" CREATED="1460365062946" MODIFIED="1460365065924"/>
+<node TEXT="look at its energy gap" ID="ID_1086027536" CREATED="1460365066146" MODIFIED="1460365079788"/>
+<node TEXT="make a random decision(on or off) based on  its energy gap" ID="ID_1800314279" CREATED="1460365079962" MODIFIED="1460365131948"/>
+</node>
+<node TEXT="the fraction of systems in each configuration remains constant" ID="ID_1602360044" CREATED="1460365153065" MODIFIED="1460365183533">
+<node TEXT="symmetric connections" ID="ID_193173208" CREATED="1460365210336" MODIFIED="1460365217235"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Boltzmann machine" POSITION="right" ID="ID_1535560061" CREATED="1459836325464" MODIFIED="1460365749319">
+<edge COLOR="#ff0000"/>
+<node TEXT="how a Boltzmann machine models data" FOLDED="true" ID="ID_1823304643" CREATED="1460365759133" MODIFIED="1460365774894">
+<node TEXT="Boltzmann machine: stochastic Hopfield nets with hidden units" ID="ID_1870344961" CREATED="1460366267602" MODIFIED="1460366307807"/>
+<node TEXT="modeling binary data" ID="ID_273621420" CREATED="1460366320425" MODIFIED="1460366325979">
+<node TEXT="math" ID="ID_1170889088" CREATED="1460366863789" MODIFIED="1460366916516">
+<hook EQUATION="p(Model_i) | data) = \frac{p(data|Model_i)}{\sum_j p(data | Model_j)}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+</node>
+<node TEXT="how a causal model generates data" ID="ID_1032065285" CREATED="1460366542999" MODIFIED="1460366559113">
+<node TEXT="pick the hidden states from their prior distribution" ID="ID_1737588247" CREATED="1460366681334" MODIFIED="1460366700680"/>
+<node TEXT="pick the visible states from their conditional distribution given the hidden states" ID="ID_707053796" CREATED="1460366701110" MODIFIED="1460366732272"/>
+<node TEXT="math" ID="ID_942642137" CREATED="1460366755551" MODIFIED="1460366774524">
+<hook EQUATION="p(\boldsymbol{v}) = \sum_{ \boldsymbol h} p(\boldsymbol h) p(\boldsymbol v | \boldsymbol h)" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="example: factor analysis is a causal model using continuous variables" ID="ID_1316297232" CREATED="1460366970693" MODIFIED="1460367017583"/>
+</node>
+<node TEXT="how a Boltzmann machine generates data" FOLDED="true" ID="ID_701730273" CREATED="1460367046771" MODIFIED="1460367060550">
+<node TEXT="not a causal generative model" ID="ID_1940618929" CREATED="1460367104363" MODIFIED="1460367120094"/>
+<node TEXT="energy model" ID="ID_392838530" CREATED="1460367234067" MODIFIED="1460367238220"/>
+<node TEXT="joint configurations of the visible and hidden units" ID="ID_1063780207" CREATED="1460367238490" MODIFIED="1460367261988"/>
+<node TEXT="the energy of a joint configuration" ID="ID_1564649644" CREATED="1460367654152" MODIFIED="1460367828423">
+<hook EQUATION="-E(v,h)=\sum_{i \in vis} v_i b_i + \sum_{k \in hid} h_k b_k + \sum_{i&lt;j}v_j v_j w_{ij} &#xd;&#xa;+ \sum_{i,k} v_i h_k w_{ik} + \sum_{k&lt;l} h_k h_l w_{kl}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="the energies of joint configurations are related to their probabilities" ID="ID_417753936" CREATED="1460367333426" MODIFIED="1460367471782">
+<hook EQUATION="p(v,h) \propto e^{-E(v,h)} \\&#xa;p(v,h) = \frac{e^{-E(v,h)}}{ \sum_{u,g} e^{-E(u,g)}}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="the probability of a configuration of the visible units" ID="ID_1609102888" CREATED="1460367980662" MODIFIED="1460368063995">
+<hook EQUATION="p(v)=\frac{\sum_h e^{-E(v,h)}}{ \sum_{u,g} e^{-E(u,g)}}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="getting a sample when there are more than a few hidden units" ID="ID_58622670" CREATED="1460368354419" MODIFIED="1460368372596">
+<node TEXT="MCMC" ID="ID_1973883628" CREATED="1460369072206" MODIFIED="1460369074560"/>
+</node>
+</node>
+</node>
+<node TEXT="Boltzmann machine learning" ID="ID_685777898" CREATED="1460365831405" MODIFIED="1460365838710">
+<node TEXT="the goal of learning" ID="ID_1535529955" CREATED="1460369160845" MODIFIED="1460369166033">
+<node TEXT="maximize the product of the probabilities in the training set" ID="ID_586208838" CREATED="1460427558786" MODIFIED="1460427596010"/>
+<node TEXT="sample method" ID="ID_832502148" CREATED="1460427596721" MODIFIED="1460427714395">
+<node TEXT="let the network settle to stationary state N different times" ID="ID_1617272841" CREATED="1460427715368" MODIFIED="1460427741466"/>
+<node TEXT="sample the visible vector each time" ID="ID_1998959311" CREATED="1460427743193" MODIFIED="1460427796579"/>
+<node TEXT="maximizing the probability that we obtain the N training cases" ID="ID_1939540385" CREATED="1460427834105" MODIFIED="1460427865714"/>
+</node>
+</node>
+<node TEXT="why the learning could be difficult" ID="ID_773136723" CREATED="1460369252180" MODIFIED="1460369259479"/>
+</node>
+<node TEXT="Restricted Boltzman machines" ID="ID_1826780259" CREATED="1460365838908" MODIFIED="1460365870119"/>
+<node TEXT="An example of RBM learning" ID="ID_69751340" CREATED="1460365925604" MODIFIED="1460365934006"/>
+<node TEXT="RBMs for collaborative filtering" ID="ID_1008263525" CREATED="1460365942678" MODIFIED="1460365969054"/>
+</node>
+<node TEXT="More efficient ways to get statistics" POSITION="right" ID="ID_1649515183" CREATED="1460365900588" MODIFIED="1460365910775">
+<edge COLOR="#0000ff"/>
 </node>
 </node>
 </map>
