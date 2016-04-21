@@ -1,7 +1,7 @@
-<map version="docear 1.0" project="152C04A2E42AJGYI9BMGODC1Z3EK271D2ZVV" project_last_home="file:/E:/HeLei/Notes/" dcr_id="1454996405559_cez9mdmj16auq5exzb68j09wa">
+<map version="docear 1.0" dcr_id="1454996405559_cez9mdmj16auq5exzb68j09wa" project="152C04A2E42AJGYI9BMGODC1Z3EK271D2ZVV" project_last_home="file:/E:/HeLei/Notes/">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <node TEXT="NeuralNetworks" FOLDED="false" ID="ID_468254664" CREATED="1454925094879" MODIFIED="1454925094889">
-<hook NAME="AutomaticEdgeColor" COUNTER="2"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="5"/>
 <hook NAME="MapStyle" zoom="1.61">
     <properties show_note_icons="true"/>
 
@@ -783,7 +783,7 @@
 <node TEXT="any net that use &apos;early stopping&apos; can do better" ID="ID_744632228" CREATED="1458814330209" MODIFIED="1458814358730"/>
 </node>
 </node>
-<node TEXT="Hopfield Nets" POSITION="right" ID="ID_383318690" CREATED="1459836150913" MODIFIED="1459836175077">
+<node TEXT="Hopfield Nets" FOLDED="true" POSITION="right" ID="ID_383318690" CREATED="1459836150913" MODIFIED="1459836175077">
 <edge COLOR="#7c7c00"/>
 <node TEXT="intro" FOLDED="true" ID="ID_1915639818" CREATED="1459836210393" MODIFIED="1459836212979">
 <node TEXT="one of the simplest kinds of energy-based model" ID="ID_1298833877" CREATED="1459836614182" MODIFIED="1459836651408"/>
@@ -967,7 +967,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Boltzmann machine learning" ID="ID_685777898" CREATED="1460365831405" MODIFIED="1460365838710">
+<node TEXT="Boltzmann machine learning" FOLDED="true" ID="ID_685777898" CREATED="1460365831405" MODIFIED="1460365838710">
 <node TEXT="the goal of learning" ID="ID_1535529955" CREATED="1460369160845" MODIFIED="1460369166033">
 <node TEXT="maximize the product of the probabilities in the training set" ID="ID_586208838" CREATED="1460427558786" MODIFIED="1460427596010"/>
 <node TEXT="sample method" ID="ID_832502148" CREATED="1460427596721" MODIFIED="1460427714395">
@@ -976,14 +976,407 @@
 <node TEXT="maximizing the probability that we obtain the N training cases" ID="ID_1939540385" CREATED="1460427834105" MODIFIED="1460427865714"/>
 </node>
 </node>
-<node TEXT="why the learning could be difficult" ID="ID_773136723" CREATED="1460369252180" MODIFIED="1460369259479"/>
+<node TEXT="why the learning could be difficult" ID="ID_773136723" CREATED="1460369252180" MODIFIED="1460369259479">
+<node TEXT="a chain" ID="ID_1278465183" CREATED="1460427987543" MODIFIED="1460428918947"/>
 </node>
-<node TEXT="Restricted Boltzman machines" ID="ID_1826780259" CREATED="1460365838908" MODIFIED="1460365870119"/>
-<node TEXT="An example of RBM learning" ID="ID_69751340" CREATED="1460365925604" MODIFIED="1460365934006"/>
-<node TEXT="RBMs for collaborative filtering" ID="ID_1008263525" CREATED="1460365942678" MODIFIED="1460365969054"/>
+<node TEXT="a very surprising fact" ID="ID_1996670844" CREATED="1460428920776" MODIFIED="1460428937154">
+<node TEXT="everything one weight need to know" ID="ID_1262930886" CREATED="1460428963839" MODIFIED="1460428978130">
+<node TEXT="the other weight" ID="ID_977770115" CREATED="1460428991495" MODIFIED="1460428998546"/>
+<node TEXT="the data" ID="ID_1334498192" CREATED="1460428998807" MODIFIED="1460429000954"/>
+<node TEXT="contained in the difference of two correlations" ID="ID_1529603181" CREATED="1460429013551" MODIFIED="1460429042354"/>
+</node>
+<node TEXT="the probability" ID="ID_1971845092" CREATED="1460429047007" MODIFIED="1460429410184">
+<hook EQUATION="\frac{\partial \log p(v)}{ \partial w_{ij}} = &lt;s_i s_j&gt;_v - &lt;s_i s_j&gt;_{model}" NAME="plugins/latex/LatexNodeHook.properties"/>
+<node TEXT="derivative of log probability of one training vector" ID="ID_1493179978" CREATED="1460429209781" MODIFIED="1460429232001"/>
+<node TEXT="expected value of product of states at thermal equilibrium when v is clamped" ID="ID_1231000742" CREATED="1460429271774" MODIFIED="1460429310359"/>
+<node TEXT="expected value of product of states at thermal equilibrium with no clamping" ID="ID_52416032" CREATED="1460429311109" MODIFIED="1460429365943"/>
+</node>
+<node TEXT="the change of weight" ID="ID_1927119102" CREATED="1460429411076" MODIFIED="1460429451396">
+<hook EQUATION="\Delta w_{ij} \propto  &lt;s_i s_j&gt;_{data} - &lt;s_i s_j&gt;_{model}" NAME="plugins/latex/LatexNodeHook.properties"/>
+<node TEXT="Hebbian learning rule" ID="ID_1223727636" CREATED="1460429550651" MODIFIED="1460429558261"/>
+<node TEXT="unlearning" ID="ID_272727727" CREATED="1460429622363" MODIFIED="1460429626285"/>
+</node>
+<node TEXT="simple" ID="ID_90614608" CREATED="1460429696362" MODIFIED="1460429700325">
+<node TEXT="the log probability is a linear function of the energy" ID="ID_1593139932" CREATED="1460429701307" MODIFIED="1460429726036"/>
+<node TEXT="the energy is a linear function of the weights and states" ID="ID_842918251" CREATED="1460429726250" MODIFIED="1460429747772"/>
+<node TEXT="what is needed to be done" ID="ID_449404832" CREATED="1460429812882" MODIFIED="1460429820995">
+<node TEXT="settle with data" ID="ID_1444630193" CREATED="1460429821761" MODIFIED="1460429824987"/>
+<node TEXT="settle with no data" ID="ID_1412195623" CREATED="1460429825202" MODIFIED="1460429835535"/>
+</node>
+</node>
+</node>
+<node TEXT="positive phase and negative phase" ID="ID_1137265230" CREATED="1460429883985" MODIFIED="1460430021954"/>
+<node TEXT="collect the statistics" ID="ID_1357153494" CREATED="1460430041392" MODIFIED="1460430047082">
+<node TEXT="an inefficient way" ID="ID_1955059469" CREATED="1460430075752" MODIFIED="1460430083833"/>
+<node TEXT="positive phase" ID="ID_856531584" CREATED="1460430105536" MODIFIED="1460430112186">
+<node TEXT="clamp the visible units" ID="ID_1483671514" CREATED="1460430128935" MODIFIED="1460430137818"/>
+<node TEXT="set the hidden units to random binary states" ID="ID_690607480" CREATED="1460430138136" MODIFIED="1460430168809"/>
+<node TEXT="update the hidden units until the network reaches thermal equilibrium" ID="ID_745404160" CREATED="1460430170222" MODIFIED="1460430211945"/>
+<node TEXT="sample &lt;s_i s_j&gt;" ID="ID_1241657005" CREATED="1460430263607" MODIFIED="1460430278777"/>
+<node TEXT="repeat it over all the visible vectors to get an average" ID="ID_1043933589" CREATED="1460430345381" MODIFIED="1460430381568"/>
+</node>
+<node TEXT="negative phase" ID="ID_1193472247" CREATED="1460430391645" MODIFIED="1460430394887">
+<node TEXT="set all the units to random binary states" ID="ID_141147724" CREATED="1460430409141" MODIFIED="1460430423120"/>
+</node>
+</node>
+</node>
+<node TEXT="Restricted Boltzman machines" ID="ID_1826780259" CREATED="1460365838908" MODIFIED="1460365870119">
+<node TEXT="idea: restrict the connectivity to make inference and learning easier" ID="ID_78733018" CREATED="1460430827618" MODIFIED="1460430863308" MOVED="1460430916193">
+<node TEXT="one layer of hidden units" ID="ID_1742720878" CREATED="1460430871057" MODIFIED="1460430877604"/>
+<node TEXT="no connections between hidden units" ID="ID_973829590" CREATED="1460430877795" MODIFIED="1460430890868"/>
+<node TEXT="no connections between visible units" ID="ID_1389929416" CREATED="1460430891090" MODIFIED="1460430904123"/>
+<node TEXT="called &quot;bipartite graph&quot;" ID="ID_685901646" CREATED="1460430961770" MODIFIED="1460430973539"/>
+</node>
+<node TEXT="get equilibrium distribution in one step if visible units are given" ID="ID_1182895448" CREATED="1460430654268" MODIFIED="1460431169104">
+<icon BUILTIN="yes"/>
+<hook EQUATION="p(h_j = 1) = \frac{1}{1 + e^{-(b + \sum_{i \in vis} v_i w_{ij}))} }" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="learning algorithm: PCD" FOLDED="true" ID="ID_1182252245" CREATED="1460431057817" MODIFIED="1460431231026">
+<node TEXT="positive phase" ID="ID_810760140" CREATED="1460431307390" MODIFIED="1460431311145">
+<node TEXT="clamp a datavector on the visible units" ID="ID_1815186757" CREATED="1460431344095" MODIFIED="1460431356113"/>
+<node TEXT="comput &lt;v_i h_j &gt; for all pairs of a visible and a hidden unit" ID="ID_681947386" CREATED="1460431356678" MODIFIED="1460431417857"/>
+<node TEXT="average &lt;v_i h_j&gt; over all the data in the mini-batch" ID="ID_911429575" CREATED="1460431429886" MODIFIED="1460431456328"/>
+</node>
+<node TEXT="negative phase" ID="ID_968222669" CREATED="1460431311391" MODIFIED="1460431318721">
+<node TEXT="keep a set of fantacy particles (global configurations)" ID="ID_48120110" CREATED="1460431568613" MODIFIED="1460431588871"/>
+<node TEXT="update each fantacy particle a few times" ID="ID_1660684214" CREATED="1460431598381" MODIFIED="1460449595026"/>
+<node TEXT="average &lt;v_i h_j&gt; over all the fantacy particles" ID="ID_694733453" CREATED="1460431602005" MODIFIED="1460449637632"/>
+</node>
+</node>
+<node TEXT="An inefficient version" FOLDED="true" ID="ID_1451190600" CREATED="1460449682989" MODIFIED="1460449698439">
+<node TEXT="updating all the hidden units" ID="ID_1102177730" CREATED="1460449758109" MODIFIED="1460449767495"/>
+<node TEXT="updating all the visible units (reconstruction)" ID="ID_9713876" CREATED="1460449767684" MODIFIED="1460449804599"/>
+<node TEXT="alternating, t = infinity" ID="ID_997558825" CREATED="1460449774357" MODIFIED="1460449832543"/>
+<node TEXT="updating weights" ID="ID_56842897" CREATED="1460449883780" MODIFIED="1460449955958">
+<hook EQUATION="\Delta w_{ij} = \varepsilon (&lt;v_i h_j&gt;^0 - &lt;v_i h_j&gt;^{\infty})" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+</node>
+<node TEXT="a very surprising short cut" FOLDED="true" ID="ID_310535457" CREATED="1460450002907" MODIFIED="1460450013349">
+<node TEXT="only one full update of Markov chain" ID="ID_8998948" CREATED="1460450065810" MODIFIED="1460450235935">
+<hook EQUATION="\Delta w_{ij} = \varepsilon (&lt;v_i h_j&gt;^0 - &lt;v_i h_j&gt;^1)" NAME="plugins/latex/LatexNodeHook.properties"/>
+<node TEXT="start with a training vector on the visible units" ID="ID_1954386327" CREATED="1460450080274" MODIFIED="1460450133716"/>
+<node TEXT="update all the hidden units in parallel" ID="ID_193928218" CREATED="1460450134314" MODIFIED="1460450158780"/>
+<node TEXT="update all the visible units in parallel to get a &quot;reconstruction&quot;" ID="ID_711622026" CREATED="1460450159242" MODIFIED="1460450194204"/>
+<node TEXT="update the hidden units again" ID="ID_1589679278" CREATED="1460450198378" MODIFIED="1460450210940"/>
+</node>
+<node TEXT="it does not following the gradient of the log likelihood, but it works well" ID="ID_879042823" CREATED="1460450266793" MODIFIED="1460450299067"/>
+<node TEXT="why does it work?" ID="ID_14540030" CREATED="1460450336769" MODIFIED="1460450342786">
+<node TEXT="if we start at the data, the Markov chain wanders away from the data and towards things that it likes more" ID="ID_1369325495" CREATED="1460450414848" MODIFIED="1460450461394"/>
+<node TEXT="raise the probability of the data after one full step" ID="ID_434123012" CREATED="1460450462600" MODIFIED="1460450615283">
+<node TEXT="the learning cancels once the confabulations and the data have the same distribution" ID="ID_533204177" CREATED="1460450641934" MODIFIED="1460450678432"/>
+</node>
+</node>
+<node TEXT="contrastive divergence learning" ID="ID_1561819863" CREATED="1460450736455" MODIFIED="1460450753064" MOVED="1460451003114">
+<node TEXT="change the weights to pull the energy down at the datapoint" ID="ID_283302099" CREATED="1460450848917" MODIFIED="1460450872416"/>
+<node TEXT="change the weights to pull the energy up at the reconstruction" ID="ID_759090865" CREATED="1460450872854" MODIFIED="1460450966231"/>
+</node>
+<node TEXT="when does the shortcut fail" ID="ID_1409922943" CREATED="1460451009540" MODIFIED="1460451016718">
+<node TEXT="far from any data" ID="ID_393134617" CREATED="1460451056644" MODIFIED="1460451062197"/>
+<node TEXT="compromise: CD1-&gt;CD3-&gt;CD10" ID="ID_1242838733" CREATED="1460451168754" MODIFIED="1460451229717"/>
+</node>
+</node>
+</node>
+<node TEXT="RBMs for collaborative filtering" ID="ID_1008263525" CREATED="1460365942678" MODIFIED="1460365969054">
+<node TEXT="collaborative filtering" ID="ID_636470613" CREATED="1460451953549" MODIFIED="1460451972511"/>
+<node TEXT="matrix factorization" ID="ID_4209482" CREATED="1460452269851" MODIFIED="1460452278645"/>
+</node>
+<node TEXT="Modeling real-value data with an RBM" FOLDED="true" ID="ID_1178264913" CREATED="1460706856773" MODIFIED="1460706876313">
+<node TEXT="units" ID="ID_1828124868" CREATED="1460706969940" MODIFIED="1460965568658">
+<node TEXT="real-valued visible unit: linear units of Gaussian noise" ID="ID_1833040948" CREATED="1460965376832" MODIFIED="1460965559816"/>
+<node TEXT="the hidden units: rectified linear units" ID="ID_300538612" CREATED="1460965410903" MODIFIED="1460965432345" MOVED="1460965545625"/>
+</node>
+<node TEXT="problem" ID="ID_1175958971" CREATED="1460965533648" MODIFIED="1460965576000">
+<node TEXT="for binary units, we can treat intermediate values as the probability that the pixel is inked" ID="ID_791897944" CREATED="1460965756853" MODIFIED="1460965797887"/>
+<node TEXT="for precise intermediate values, we cann&apos;t use logistic units" ID="ID_769114141" CREATED="1460965798980" MODIFIED="1460965837095"/>
+</node>
+<node TEXT="the energy function" ID="ID_860496369" CREATED="1460965899788" MODIFIED="1460966357460">
+<hook EQUATION="E(v,h) = \sum_{i \in vis} \frac{(v_i -b_i)^2}{2 \sigma_i^2} - \sum_{j \in hid} b_j h_j&#xd;&#xa;- \sum_{i,j} \frac{v_i}{\sigma_i}h_j w_{ij}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="the effects of the standard deviation" ID="ID_500922516" CREATED="1460966432656" MODIFIED="1460966639937">
+<node TEXT="when sigma is much less than 1, the bottom up effects are too big and the top-down effects are too small" ID="ID_361675233" CREATED="1460966446488" MODIFIED="1460966512154"/>
+<node TEXT="we need many more hidden units than visible units" ID="ID_1170285958" CREATED="1460966517703" MODIFIED="1460966540097"/>
+<node TEXT="the number of hidden units to change as that standard deviation sigma gets smalls" ID="ID_495559686" CREATED="1460966565919" MODIFIED="1460966605313"/>
+</node>
+<node TEXT="stepped sigmoid units" ID="ID_903681258" CREATED="1460966627342" MODIFIED="1460966699896">
+<node TEXT="make many copies of a stochastic binary unit" ID="ID_1939094439" CREATED="1460966750405" MODIFIED="1460966767799"/>
+<node TEXT="all copies have the same weights and the same adaptive bias, but with different fixed offsets" ID="ID_1407075326" CREATED="1460966779933" MODIFIED="1460966829328"/>
+<node TEXT="as the standard deviation gets smaller, the number of copies of each hidden unit that get turned on gets bigger" ID="ID_950124717" CREATED="1460966920549" MODIFIED="1460966992918"/>
+<node TEXT="fast approximation(rectified linear units)" ID="ID_1033971742" CREATED="1460967022188" MODIFIED="1460967281141">
+<hook EQUATION="&lt;y&gt;= \sum_{n=1}^{n= \infty} \sigma (x+0.5-n) \approx \log (1 + e^x) \approx \max (0, x + noise)" NAME="plugins/latex/LatexNodeHook.properties"/>
+<node TEXT="contrastive divergence learning" ID="ID_1428726390" CREATED="1460967313009" MODIFIED="1460967326075"/>
+</node>
+</node>
+<node TEXT="rectified linear units(relu)" ID="ID_1932179278" CREATED="1460967258986" MODIFIED="1460967371884">
+<node TEXT="if it has a bias of 0, it exhibits scale equivariance" ID="ID_1959998943" CREATED="1460967399217" MODIFIED="1460967562472">
+<hook EQUATION="R(a x) = a R(x) \\&#xd;&#xa;R(a+b) \neq R(a) + R(b)" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="More efficient ways to get statistics" POSITION="right" ID="ID_1649515183" CREATED="1460365900588" MODIFIED="1460365910775">
 <edge COLOR="#0000ff"/>
+</node>
+<node TEXT="Belief nets" FOLDED="true" POSITION="right" ID="ID_1930280905" CREATED="1460452603309" MODIFIED="1460452608754">
+<edge COLOR="#00ff00"/>
+<node TEXT="model the input data rather than predicting a label" FOLDED="true" ID="ID_1340042021" CREATED="1460611966755" MODIFIED="1460611991039">
+<node TEXT="graphical models" ID="ID_770750004" CREATED="1460612005812" MODIFIED="1460612011335"/>
+<node TEXT="combine discrete structures for representing how variables depended on one another" ID="ID_1407941858" CREATED="1460612026291" MODIFIED="1460612076014"/>
+<node TEXT="Bolzman nets are undirected graphical models" ID="ID_385390715" CREATED="1460612097020" MODIFIED="1460612141102"/>
+<node TEXT="Belief nets are directed graphical models with same structrue" ID="ID_1995554598" CREATED="1460612151115" MODIFIED="1460612213869"/>
+</node>
+<node TEXT="what&apos;s wrong with Back Propagation" FOLDED="true" ID="ID_1467953943" CREATED="1460612243770" MODIFIED="1460612264372">
+<node TEXT="it requires labeled training data" ID="ID_937477612" CREATED="1460612265298" MODIFIED="1460612280549"/>
+<node TEXT="the learning time does scale well, very slow with multiple hidden layers" ID="ID_1632722725" CREATED="1460612280970" MODIFIED="1460612318484"/>
+<node TEXT="it can get stuck in poor local optima, for deep nets they are far from optimal" ID="ID_1910092733" CREATED="1460612333833" MODIFIED="1460612393220"/>
+<node TEXT="retreat to models that allow convex optimization" ID="ID_396975336" CREATED="1460612440073" MODIFIED="1460612466340">
+<icon BUILTIN="button_cancel"/>
+<node TEXT="running away from the complexity of real data" ID="ID_1373819111" CREATED="1460612477016" MODIFIED="1460612492571"/>
+</node>
+</node>
+<node TEXT="overcoming the limitations of BP by using unsupervised learning" FOLDED="true" ID="ID_1802374804" CREATED="1460612510528" MODIFIED="1460612544083">
+<node TEXT="idea" ID="ID_794719358" CREATED="1460612575968" MODIFIED="1460612578394">
+<node TEXT="keep the efficiency and simplicity of using a gradient method for adjusting weights" ID="ID_1407369248" CREATED="1460612579272" MODIFIED="1460612606858"/>
+<node TEXT="but use it for modeling the structure of the sensory input, not the relationship between input and output" ID="ID_1440393695" CREATED="1460612612200" MODIFIED="1460612655841"/>
+<node TEXT="maximize the probability to generate the input" ID="ID_52052743" CREATED="1460612683127" MODIFIED="1460612700505">
+<node TEXT="maximize p(x) not p(y|x)" ID="ID_352079103" CREATED="1460612743550" MODIFIED="1460612755233"/>
+</node>
+<node TEXT="what kind of generative model" ID="ID_1946852345" CREATED="1460612781839" MODIFIED="1460612837712">
+<icon BUILTIN="help"/>
+<node TEXT="Bolzman Machine" ID="ID_143766337" CREATED="1460612806470" MODIFIED="1460612825264"/>
+<node TEXT="causal model" ID="ID_243644318" CREATED="1460612825718" MODIFIED="1460612833609"/>
+<node TEXT="hybrid of the two" ID="ID_1523249049" CREATED="1460612862101" MODIFIED="1460612875400"/>
+</node>
+</node>
+</node>
+<node TEXT="Aartificial Intelligence and Probability" FOLDED="true" ID="ID_1922108924" CREATED="1460612896981" MODIFIED="1460613064471">
+<node TEXT="in the past, people didn&apos;t believe probability" ID="ID_795846952" CREATED="1460613065844" MODIFIED="1460613081839"/>
+<node TEXT="finally, probability find its way to AI by graphical models" ID="ID_183365683" CREATED="1460613082204" MODIFIED="1460613196142"/>
+</node>
+<node TEXT="Belief nets" FOLDED="true" ID="ID_1017630338" CREATED="1460613346250" MODIFIED="1460613355260">
+<node TEXT="A belief net is a directed acyclic graph composed of stochastic variables" ID="ID_133356332" CREATED="1460613356083" MODIFIED="1460613420524"/>
+<node TEXT="the Inference problem: infer the states of the unobserved variables" ID="ID_623102282" CREATED="1460613462378" MODIFIED="1460613501820">
+<node TEXT="cannot be certainty" ID="ID_474893180" CREATED="1460613523777" MODIFIED="1460613529491"/>
+<node TEXT="only probability" ID="ID_1779840927" CREATED="1460613529689" MODIFIED="1460613535387"/>
+<node TEXT="if the unobserved in not independed" ID="ID_903862854" CREATED="1460613579840" MODIFIED="1460613625147">
+<icon BUILTIN="clanbomber"/>
+</node>
+</node>
+<node TEXT="the Learning problem: adjust the interactions between variables to make it more likely to generate the training data" ID="ID_1051855612" CREATED="1460613471929" MODIFIED="1460613705050"/>
+</node>
+<node TEXT="graphical models versus neural networks" FOLDED="true" ID="ID_611015389" CREATED="1460613752032" MODIFIED="1460613764818">
+<node TEXT="early graphical models" ID="ID_622493931" CREATED="1460613880102" MODIFIED="1460613885465">
+<node TEXT="use experts to define the graph structure and the conditional probabilities" ID="ID_1484568808" CREATED="1460613904216" MODIFIED="1460613928624"/>
+<node TEXT="the graphs were sparsely connected" ID="ID_1855510820" CREATED="1460613933399" MODIFIED="1460613950273"/>
+<node TEXT="researchers initially foucused on doing correct inference, not on learning" ID="ID_725302135" CREATED="1460613955614" MODIFIED="1460613986112"/>
+</node>
+<node TEXT="neural networks" ID="ID_1715863598" CREATED="1460613885847" MODIFIED="1460613891560">
+<node TEXT="learning was central" ID="ID_1586041477" CREATED="1460613996222" MODIFIED="1460614006944"/>
+<node TEXT="knowledge came from learning the training data" ID="ID_107276256" CREATED="1460614007110" MODIFIED="1460614027224"/>
+<node TEXT="didn&apos;t aim for interpretability or sparse connectivity to make inference easy" ID="ID_637406345" CREATED="1460614041526" MODIFIED="1460614073864"/>
+<node TEXT="except belief nets" ID="ID_1113362997" CREATED="1460614115973" MODIFIED="1460614120671"/>
+</node>
+</node>
+<node TEXT="two types" FOLDED="true" ID="ID_866067580" CREATED="1460614147213" MODIFIED="1460614149943">
+<node TEXT="energy based models" ID="ID_218097731" CREATED="1460614150653" MODIFIED="1460614157454"/>
+<node TEXT="causal" ID="ID_845759607" CREATED="1460614231236" MODIFIED="1460614234206">
+<node TEXT="directed acyclic graph" ID="ID_325855695" CREATED="1460614240580" MODIFIED="1460614252191"/>
+<node TEXT="easy to generate samples" ID="ID_1569496442" CREATED="1460614335236" MODIFIED="1460614339886"/>
+</node>
+</node>
+<node TEXT="Learning sigmoid belief networks" FOLDED="true" ID="ID_1513881051" CREATED="1460688825781" MODIFIED="1460688836357">
+<node TEXT="why it is difficult?" ID="ID_240823135" CREATED="1460688851396" MODIFIED="1460688859336">
+<node TEXT="good news" ID="ID_355868290" CREATED="1460688887724" MODIFIED="1460688891519">
+<node TEXT="don&apos;t need two different phases,only need to deal with the positive part" ID="ID_809167891" CREATED="1460688892365" MODIFIED="1460688991446"/>
+<node TEXT="if we could get unbias samples from p(h|v), then learning would be easy" ID="ID_1600425530" CREATED="1460688935044" MODIFIED="1460689061925" MOVED="1460688938972">
+<node TEXT="gradient specified by maximum likelihood learning" ID="ID_114560428" CREATED="1460689074867" MODIFIED="1460689109885"/>
+</node>
+</node>
+<node TEXT="bad news" ID="ID_653394470" CREATED="1460689127395" MODIFIED="1460689130885">
+<node TEXT="it is hard to get p(h|v), because of explaining away" ID="ID_1203356544" CREATED="1460689131850" MODIFIED="1460689187990"/>
+<node TEXT="it is hard to even get a sample from the posterior" ID="ID_1492701415" CREATED="1460689348553" MODIFIED="1460689366708"/>
+</node>
+</node>
+<node TEXT="the learning rule" FOLDED="true" ID="ID_53651552" CREATED="1460689411592" MODIFIED="1460689434027">
+<node TEXT="if we could get samples from the posterior" ID="ID_1398035147" CREATED="1460689435425" MODIFIED="1460689450723">
+<node TEXT="s_j is one of the parents of s_i" ID="ID_1697989827" CREATED="1460689787230" MODIFIED="1460689802241"/>
+<node TEXT="the probability of s_i is on" ID="ID_43902025" CREATED="1460689802598" MODIFIED="1460689858474">
+<hook EQUATION="p(s_i = 1) = \frac{1}{ 1 + exp(-b_i - \sum_j s_j w_{ji})}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node TEXT="updating" ID="ID_1760487007" CREATED="1460689871590" MODIFIED="1460689903780">
+<hook EQUATION="\Delta w_{ji} = \varepsilon s_j ( s_i - p_i)" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+</node>
+</node>
+<node TEXT="Explaining away" FOLDED="true" ID="ID_1516329940" CREATED="1460689930261" MODIFIED="1460689938055">
+<node TEXT="a simple example" ID="ID_1556924002" CREATED="1460690234290" MODIFIED="1460690242789"/>
+<node TEXT="why it is hard?" ID="ID_1883324941" CREATED="1460690243075" MODIFIED="1460690285020">
+<node TEXT="the posterior is not factorial because of explaining away" ID="ID_1109114146" CREATED="1460690286154" MODIFIED="1460690593296">
+<icon BUILTIN="smily_bad"/>
+<node TEXT="the data(the lower layer)" ID="ID_1930155821" CREATED="1460690427281" MODIFIED="1460690492211"/>
+</node>
+<node TEXT="the posterior depends on prior as well as the likelihood" ID="ID_1471853180" CREATED="1460690388506" MODIFIED="1460690596088">
+<icon BUILTIN="smily_bad"/>
+<node TEXT="the prior(the higher layer)" ID="ID_1876290342" CREATED="1460690438993" MODIFIED="1460690484156"/>
+</node>
+<node TEXT="we need to integrate over all possible configurations in the higher layers to get the prior for the first layer!" ID="ID_1299483248" CREATED="1460690469297" MODIFIED="1460690584849">
+<icon BUILTIN="smily_bad"/>
+</node>
+</node>
+</node>
+<node TEXT="two different methods" FOLDED="true" ID="ID_1291346936" CREATED="1460688859973" MODIFIED="1460688868159">
+<node TEXT="Monte Carlo Methods" ID="ID_51374084" CREATED="1460690661432" MODIFIED="1460690672873">
+<node TEXT="it considers all the parents activity over all the hidden variables" ID="ID_478689485" CREATED="1460690696296" MODIFIED="1460691024888"/>
+<node TEXT="runs a markov chain that takes a long time to settle down, given the data vector" ID="ID_429155860" CREATED="1460691057061" MODIFIED="1460691097303"/>
+<node TEXT="once it is settle down to thermal equilibrium, you can get a sample from the posterior" ID="ID_1670521544" CREATED="1460691105836" MODIFIED="1460691193710"/>
+<node TEXT="disadvantage" ID="ID_1731349589" CREATED="1460691291372" MODIFIED="1460691298446">
+<node TEXT="it is painfully slow for large, deep belief nets" ID="ID_473055039" CREATED="1460691455402" MODIFIED="1460691492980"/>
+</node>
+</node>
+<node TEXT="variational methods" ID="ID_1965888" CREATED="1460691523698" MODIFIED="1460691536524">
+<node TEXT="give up on getting unbias samples from the posterior" ID="ID_1216219634" CREATED="1460691557393" MODIFIED="1460691584348"/>
+<node TEXT="just getting approximate samples, and sample from some other distribution that approximates the posterior" ID="ID_474059556" CREATED="1460691598633" MODIFIED="1460691677323"/>
+<node TEXT="what happens if we use the wrong distribution but still use maximum likelihood learning rule" ID="ID_788192545" CREATED="1460691706489" MODIFIED="1460691794312">
+<icon BUILTIN="help"/>
+</node>
+<node TEXT="it is a lower bound of log probability" ID="ID_583877879" CREATED="1460691830488" MODIFIED="1460691867706">
+<node TEXT="by pushing up the lower bound" ID="ID_1627861088" CREATED="1460691852608" MODIFIED="1460691875705"/>
+<node TEXT="we usually pushing up the log probability" ID="ID_1491488846" CREATED="1460691880031" MODIFIED="1460691892601"/>
+</node>
+</node>
+</node>
+<node TEXT="The wake-sleep algorithm" FOLDED="true" ID="ID_1095802452" CREATED="1460691944895" MODIFIED="1460691965113">
+<node TEXT="the first way to learning efficiently" ID="ID_1725842301" CREATED="1460691988847" MODIFIED="1460691998648"/>
+<node TEXT="it should not be confused with bolzman machines" ID="ID_698575664" CREATED="1460692006207" MODIFIED="1460692020856">
+<node TEXT="also has positive and negative phase" ID="ID_868476367" CREATED="1460692038222" MODIFIED="1460692051896"/>
+<node TEXT="but it is for directed graphical models" ID="ID_36166690" CREATED="1460692060670" MODIFIED="1460692079656"/>
+<node TEXT="variational learnings" ID="ID_1951776852" CREATED="1460692122733" MODIFIED="1460692133992"/>
+</node>
+<node TEXT="idea" ID="ID_1459814341" CREATED="1460692167213" MODIFIED="1460692170167">
+<node TEXT="computer some cheap approximation of the correct posterior distribution" ID="ID_1741305701" CREATED="1460692179605" MODIFIED="1460692228175"/>
+<node TEXT="do maximum likelihood learning anyway" ID="ID_549931435" CREATED="1460692244284" MODIFIED="1460692255935"/>
+<node TEXT="one term to drive the weights to get a better model of the data" ID="ID_1609986023" CREATED="1460692297460" MODIFIED="1460692331086"/>
+<node TEXT="the other term dirves the weights towards the set of weights for which the approximate posterior using is a good fit to the real posterior" ID="ID_734798088" CREATED="1460692358764" MODIFIED="1460692414126"/>
+</node>
+<node TEXT="factorial distributions" ID="ID_52939426" CREATED="1460692541426" MODIFIED="1460692552453">
+<node TEXT="the probability of a configuration of the hidden layer is just the product of the individual probabilities" ID="ID_1919717988" CREATED="1460692593738" MODIFIED="1460692652364"/>
+<node TEXT="freedom: 2^N-1 -&gt; N" ID="ID_1347003911" CREATED="1460692708938" MODIFIED="1460692729315"/>
+</node>
+<node TEXT="the wake-sleep algorithm" ID="ID_1819056903" CREATED="1460692756849" MODIFIED="1460692767267">
+<node TEXT="two different set of weights" ID="ID_1636342981" CREATED="1460692787088" MODIFIED="1460692799923">
+<node TEXT="the generative weights: generate the data vector" ID="ID_1746297759" CREATED="1460692833617" MODIFIED="1460692903386"/>
+<node TEXT="the recognitional weights: approximately getting the posterior distribution" ID="ID_1874576832" CREATED="1460692851152" MODIFIED="1460692889234"/>
+</node>
+<node TEXT="wake phase" ID="ID_354026411" CREATED="1460692932608" MODIFIED="1460692936634">
+<node TEXT="use recognition weights to perform a bottom-up pass" ID="ID_842470826" CREATED="1460692942183" MODIFIED="1460692963794"/>
+<node TEXT="train the generative weights to reconstruct activities in each layer from the layer above" ID="ID_616090441" CREATED="1460693338981" MODIFIED="1460693376087"/>
+</node>
+<node TEXT="sleep phase" ID="ID_1945548540" CREATED="1460693304045" MODIFIED="1460693307623">
+<node TEXT="use generative wights to generate samples from the model" ID="ID_499663749" CREATED="1460693381508" MODIFIED="1460693412327"/>
+<node TEXT="train the recogniton weights to reconstruct activities in each layer from the layer below" ID="ID_149979877" CREATED="1460693412932" MODIFIED="1460694032218"/>
+</node>
+<node TEXT="the flaws" ID="ID_1309406136" CREATED="1460693285053" MODIFIED="1460693290919">
+<node TEXT="the recognition weights are trained to invert the generative model in parts of the space where there is no data (wasteful, but not a big problem)" ID="ID_524554685" CREATED="1460694092520" MODIFIED="1460694187003"/>
+<node TEXT="the recognition weights do not follow the gradient of the log probability of the data. They only approximately follow the variational bound on this probability(leads to incorrect mode-averaging)" ID="ID_1960133682" CREATED="1460694226223" MODIFIED="1460694334971"/>
+<node TEXT="the posterior over the top hidden layer is very far from independent because of explaining away effects" ID="ID_1975427885" CREATED="1460694354646" MODIFIED="1460694397127"/>
+</node>
+</node>
+<node TEXT="model averaging" ID="ID_995662500" CREATED="1460694503988" MODIFIED="1460694508927"/>
+</node>
+</node>
+</node>
+<node TEXT="Deep Blief Networks" POSITION="right" ID="ID_1624392252" CREATED="1460704281304" MODIFIED="1460704291408">
+<edge COLOR="#00ffff"/>
+<node TEXT="Learning layers of features by stacking RBMs" FOLDED="true" ID="ID_59370211" CREATED="1460701358732" MODIFIED="1460701687892">
+<node TEXT="idea" ID="ID_348020436" CREATED="1460702129367" MODIFIED="1460702131825" MOVED="1460702136581">
+<node TEXT="RBM could learn efficiently a layer of nonlinear features" ID="ID_1062477642" CREATED="1460701595971" MODIFIED="1460701742100" MOVED="1460702139148"/>
+<node TEXT="stacking RBMs, you actually get something like a sigmoid belief net" ID="ID_1416269990" CREATED="1460701814873" MODIFIED="1460701852371" MOVED="1460702140991"/>
+<node TEXT="idea: training a deep network by stacking RBMs" ID="ID_1778006683" CREATED="1460701886601" MODIFIED="1460701906643" MOVED="1460702143632"/>
+<node TEXT="it can be proved that each time we add another layer of features, we improve a variational lower bound on the log probability of generating the training data. The proof is based on a neat equivalence between an RBM and an infinitely deep belief net." ID="ID_1925802759" CREATED="1460701955400" MODIFIED="1460702114229" MOVED="1460702146352"/>
+</node>
+<node TEXT="combining two RBMs to make a DBN" ID="ID_248581821" CREATED="1460702148711" MODIFIED="1460702163096"/>
+</node>
+<node TEXT="Discriminative learning for DBNs" FOLDED="true" ID="ID_1642425012" CREATED="1460704375871" MODIFIED="1460704398865">
+<node TEXT="pre-training and fine-tuning" ID="ID_1899184432" CREATED="1460704818092" MODIFIED="1460704834838">
+<node TEXT="pretraining" ID="ID_948909967" CREATED="1460704680716" MODIFIED="1460704686615" MOVED="1460704690235">
+<node TEXT="learn one layer at a time by stacking RBMs" ID="ID_1792683961" CREATED="1460704697236" MODIFIED="1460704716927"/>
+<node TEXT="it means finding a good initial set of weights" ID="ID_149428730" CREATED="1460704737629" MODIFIED="1460704756183"/>
+</node>
+<node TEXT="fine-tuning for generation" ID="ID_1401853976" CREATED="1460704631117" MODIFIED="1460704648623"/>
+<node TEXT="fine-tuning for discrimination" ID="ID_899643119" CREATED="1460704649013" MODIFIED="1460704660879"/>
+</node>
+<node TEXT="advantages" ID="ID_763666704" CREATED="1460704877612" MODIFIED="1460704880413">
+<node TEXT="this overcomes many of the limitations of standard backpropagation" ID="ID_1789222376" CREATED="1460704881107" MODIFIED="1460704913383"/>
+<node TEXT="it makes it easier to learn deep nets" ID="ID_282511642" CREATED="1460704916019" MODIFIED="1460704931709"/>
+<node TEXT="it makes the nets generalize better" ID="ID_490696525" CREATED="1460704932011" MODIFIED="1460704952829"/>
+</node>
+<node TEXT="why BP works better with greedy pre-training" FOLDED="true" ID="ID_634186609" CREATED="1460704977170" MODIFIED="1460962780152">
+<node TEXT="the optimization view" ID="ID_1067682240" CREATED="1460962780995" MODIFIED="1460962795348">
+<node TEXT="one layer at a time, locality in each layer" ID="ID_1251844729" CREATED="1460962979768" MODIFIED="1460963000219"/>
+<node TEXT="have sensible feature detectors" ID="ID_301763398" CREATED="1460963016888" MODIFIED="1460963034850"/>
+<node TEXT="BP only needs to perform a local search from sensible starting point" ID="ID_1128862163" CREATED="1460963035632" MODIFIED="1460963069026"/>
+</node>
+<node TEXT="the generalization(overfitting) view" ID="ID_178652870" CREATED="1460962795794" MODIFIED="1460962921235">
+<node TEXT="most of the information in the final weights comes from modeling the distribution of input vectors" ID="ID_1090714974" CREATED="1460963158367" MODIFIED="1460963196537">
+<node TEXT="the input vectors contain a lot more information than the labels" ID="ID_1888069587" CREATED="1460963197815" MODIFIED="1460963251233"/>
+<node TEXT="the precious information in the labels only used for the fine-tuning" ID="ID_1262108070" CREATED="1460963260111" MODIFIED="1460963283185"/>
+</node>
+<node TEXT="the fine-tuning only modifies the features slightly, it doesn&apos;t need to discover new features" ID="ID_1673302930" CREATED="1460963309965" MODIFIED="1460963385832"/>
+<node TEXT="most of the data is unlabeled" ID="ID_1810966005" CREATED="1460963407597" MODIFIED="1460963417320">
+<node TEXT="the unlabeled feature is still very useful for discovering good features" ID="ID_550201671" CREATED="1460963429925" MODIFIED="1460963454688"/>
+</node>
+<node TEXT="An objection" ID="ID_1929959770" CREATED="1460963479980" MODIFIED="1460963486087">
+<node TEXT="many of the features will be useless for any particular discriminative task" ID="ID_55327309" CREATED="1460963498404" MODIFIED="1460963593016"/>
+<node TEXT="don&apos;t know the task in advance" ID="ID_1693947747" CREATED="1460963626115" MODIFIED="1460963636182"/>
+<node TEXT="the computer are large enough now" ID="ID_1839301272" CREATED="1460963649916" MODIFIED="1460963661279"/>
+<node TEXT="the ones that are useful will be much more useful than raw inputs" ID="ID_46131662" CREATED="1460963727787" MODIFIED="1460963754293"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="What happens during discriminative fine-tuning" FOLDED="true" ID="ID_1924128827" CREATED="1460704414070" MODIFIED="1460704435633">
+<node TEXT="more layers with or without pre-training" ID="ID_785335499" CREATED="1460964458534" MODIFIED="1460964487888"/>
+<node TEXT="trajectories" ID="ID_1448704266" CREATED="1460964617948" MODIFIED="1460964621591">
+<node TEXT="end up with different local minimum without pretraining" ID="ID_140659882" CREATED="1460964667988" MODIFIED="1460964690558"/>
+<node TEXT="no overlap" ID="ID_124460525" CREATED="1460964723188" MODIFIED="1460964726766"/>
+</node>
+<node TEXT="why pre-training makes sense" ID="ID_1723391818" CREATED="1460964745484" MODIFIED="1460964752926">
+<node TEXT="image is a high-bandwidth representation of stuff" ID="ID_107703876" CREATED="1460965049802" MODIFIED="1460965072972"/>
+<node TEXT="label is a low-bandwidth representation of stuff" ID="ID_1355140576" CREATED="1460965073249" MODIFIED="1460965093876"/>
+<node TEXT="it wouldn&apos;t make sense to try to go from images to labels" ID="ID_624190228" CREATED="1460965094417" MODIFIED="1460965123339"/>
+<node TEXT="learn to recover the stuff by inverting the high-bandwidth pathway" ID="ID_11994876" CREATED="1460965188467" MODIFIED="1460965266323"/>
+</node>
+</node>
+<node TEXT="RBMs are infinited sigmoid belief nets" ID="ID_1809723783" CREATED="1460967702551" MODIFIED="1460967737887">
+<icon BUILTIN="idea"/>
+</node>
+</node>
+<node TEXT="Deep auto encoders" POSITION="right" ID="ID_307773068" CREATED="1460452612385" MODIFIED="1460452638015">
+<edge COLOR="#ff00ff"/>
+<node TEXT="from PCA to antoencoders" ID="ID_280570418" CREATED="1460704474719" MODIFIED="1460704487696">
+<node TEXT="Principal Components Analysis" ID="ID_1555205237" CREATED="1460983091082" MODIFIED="1460983109700">
+<node TEXT="It takes N-dimensional data and finds the M orthgonal directions in which the data have the most variance" ID="ID_972635940" CREATED="1460983110691" MODIFIED="1460983169788"/>
+<node TEXT="ignore the directions in which the data doesn&apos;t vary much" ID="ID_845578416" CREATED="1460983232881" MODIFIED="1460983282554"/>
+</node>
+<node TEXT="nonlinear" ID="ID_1371277545" CREATED="1460983754430" MODIFIED="1460983759465"/>
+</node>
+<node TEXT="deep autoencoders" ID="ID_806645636" CREATED="1460704492750" MODIFIED="1460704500048">
+<node TEXT="it could be learned with pre-training" ID="ID_1195134595" CREATED="1460983855997" MODIFIED="1460983868743"/>
+<node TEXT="a nice way to do non-linear dimensionality reduction" ID="ID_929853058" CREATED="1460983889701" MODIFIED="1460983927455">
+<node TEXT="flex mappings both ways" ID="ID_1157932834" CREATED="1460983928717" MODIFIED="1460983956214"/>
+<node TEXT="the learning time is linear or better in the number of training cases" ID="ID_1389263786" CREATED="1460983964004" MODIFIED="1460983983222"/>
+<node TEXT="the final encoding model is fairly compact and fast" ID="ID_259419140" CREATED="1460983990484" MODIFIED="1460984008854"/>
+</node>
+<node TEXT="problems with BP" ID="ID_317370286" CREATED="1460984017164" MODIFIED="1460984023238">
+<node TEXT="with small initial weights the BP gradient dies" ID="ID_302176897" CREATED="1460984088267" MODIFIED="1460984120125"/>
+<node TEXT="" ID="ID_1894812387" CREATED="1460984121563" MODIFIED="1460984121563"/>
+</node>
+<node TEXT="a much better way to train it" ID="ID_756773403" CREATED="1460984150338" MODIFIED="1460984158493">
+<node TEXT="use unsupervised layer by layer pre-training" ID="ID_1341125428" CREATED="1460984164090" MODIFIED="1460984180405"/>
+<node TEXT="just initialize the weights carefully as in Echo-State Nets" ID="ID_1372722229" CREATED="1460984195533" MODIFIED="1460984228437"/>
+</node>
+</node>
+<node TEXT="deep autoencoders for document retrieval" ID="ID_382942319" CREATED="1460704500670" MODIFIED="1460704517280"/>
+<node TEXT="shallow autoencoders for pretraining" ID="ID_1236037375" CREATED="1460704530334" MODIFIED="1460704625223"/>
 </node>
 </node>
 </map>
